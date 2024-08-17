@@ -1,11 +1,7 @@
-package school.management.system;public class Teacher {
-
-
+package school.management.system;
     /*
      * This class is responsible for keeping the track
      * of teacher's name, id, salary
-     *
-     *
      */
     public class Teacher {
 
@@ -15,10 +11,11 @@ package school.management.system;public class Teacher {
 
 
         /*
-        * created a new Teacher object.
+        * creates a new Teacher object.
+        * @param id id for the teacher
         * @param name name of the teacher
         * @param salary salary of the teacher
-        * */
+         */
 
         public Teacher(int id, String name, int salary) {
             this.id = id;
@@ -51,8 +48,8 @@ package school.management.system;public class Teacher {
         }
 
         public void setSalary(int salary) {
-             this.salary = salary;t
+             this.salary = salary;
         }
 
     }
-}
+
