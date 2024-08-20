@@ -12,8 +12,8 @@ public class School {
 
     private List<Teacher> teachers;
     private List<Student> students;
-    private int totalMoneyEarned;
-    private int totalMoneySpent;
+    private static int totalMoneyEarned;
+    private static int totalMoneySpent;
 
     /*
     * new school object is created
@@ -75,7 +75,7 @@ public class School {
      * @param MoneyEarned money that is supposed to be added.
      * */
 
-    public void updateTotalMoneyEarned(int MoneyEarned) {
+    public static void updateTotalMoneyEarned(int MoneyEarned) {
         totalMoneyEarned += MoneyEarned;
     }
 
@@ -87,13 +87,14 @@ public class School {
         return totalMoneySpent;
     }
 
+
     /*
      * update the money that is spent by the school
      * which is the salary given by the school to its teachers.
      * @param MoneySpent the money spent by the school
      * */
 
-    public void updateTotalMoneySpent(int MoneySpent) {
-        totalMoneySpent -= MoneySpent;
+    public static void updateTotalMoneySpent(int moneySpent) {
+        totalMoneyEarned-= moneySpent;
     }
 }

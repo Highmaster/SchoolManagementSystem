@@ -24,6 +24,33 @@ public class Main {
         studentList.add(iche);
 
         School ghs = new School(teacherList, studentList);
+        Teacher megan = new Teacher(6, "Megan", 900);
+
+        ghs.addTeacher(megan);
+
+
+        tamasha.payFees(5000);
         System.out.println("GHS has earned $" +ghs.getTotalMoneyEarned());
+        jack.payFees(6000);
+        System.out.println("GHS has earned $" +ghs.getTotalMoneyEarned());
+
+        System.out.println("----------Making SCHOOL PAY SALARY");
+        lizzy.receiveSalary(lizzy.getSalary());
+        System.out.println("GHS has spent for salary to " + lizzy.getName()
+        + "  and now has $" + ghs.getTotalMoneyEarned());
+
+
+        vanderhorn.receiveSalary(vanderhorn.getSalary());
+        System.out.println("GHS  has spent for salary to " + vanderhorn.getName()
+        +" and now has $ " + ghs.getTotalMoneyEarned());
+
+        System.out.println(jack);
+
+        mellisa.receiveSalary((mellisa.getSalary()));
+
+        System.out.println(mellisa);
+
+
+
     }
 }
